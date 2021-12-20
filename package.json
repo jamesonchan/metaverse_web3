@@ -5,10 +5,17 @@
     "build": "next build",
     "start": "next start"
   },
+  "browser": {
+    "fs": true
+  },
   "dependencies": {
+    "@walletconnect/web3-provider": "^1.7.0",
+    "moralis": "^0.0.176",
     "next": "latest",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-moralis": "^0.3.9",
+    "react-spinners": "^0.11.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
