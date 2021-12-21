@@ -1,5 +1,5 @@
 module.exports={
     images:{
-        domains:['visualise.com']
+        domains:['avatars.dicebear.com']
     }
 }

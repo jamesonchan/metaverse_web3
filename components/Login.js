@@ -4,6 +4,7 @@ import Background from "../images/Gaming and the metaverse.jpg";
 import Doge from "../images/doge2.png";
 import ClipLoader from "react-spinners/ClipLoader";
 import { useMoralis } from "react-moralis";
+import { LoginIcon } from "@heroicons/react/outline";
 
 function Login() {
   const { authenticate, isAuthenticating } = useMoralis();
@@ -15,12 +16,15 @@ function Login() {
         {/* login button */}
         <button
           onClick={() => authenticate()}
-          className="bg-yellow-300 border-4 relative border-[#191932] rounded-lg p-5 font-bold animate-pulse"
+          className="bg-yellow-300 border-4 relative border-[#191932] rounded-lg p-3 font-bold animate-pulse"
         >
-          Login to the METAVERSE
+          <div className="flex items-center">
+            <LoginIcon className="h-7 pr-2" />
+            <p className="text-lg">Connect with your wallet</p>
+          </div>
         </button>
         <div className="absolute top-1/2 translate-y-[140px] left-1/2 -translate-x-2">
-          <ClipLoader size={20} color="#191932"  loading={isAuthenticating} />
+          <ClipLoader size={20} color="#191932" loading={isAuthenticating} />
         </div>
       </div>
       <div className="w-full h-screen">
