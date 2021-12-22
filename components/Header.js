@@ -16,14 +16,14 @@ function Header() {
         </div>
 
         <div className=" text-left lg:text-center col-span-4">
-          <div className="relative h-48 w-48 lg:mx-auto border-amber-400 border-8 rounded-full">
+          <div className="relative h-32 w-32 sm:h-48 sm:w-48 lg:mx-auto border-amber-400 border-8 rounded-full">
             {/*image avatar */}
             <Avatar logoutOnPress />
           </div>
           {/* message */}
-          <h1 className="text-3xl">Welcome to the metaverse</h1>
+          <h1 className="sm:text-3xl text-sm">Welcome to the metaverse</h1>
           {/* username */}
-          <h2 className="text-5xl truncate">{user.getUsername()}</h2>
+          <h2 className="sm:text-5xl text-xl truncate font-bold">{user.getUsername()}</h2>
           {/* change username component */}
           <ChangeUsername />
         </div>
